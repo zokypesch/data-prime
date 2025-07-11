@@ -36,66 +36,9 @@
     <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
     
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/mobile.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Additional responsive styles for mobile devices -->
-    <style>
-        /* Mobile-first responsive design */
-        .hero-container {
-            display: flex;
-            flex-direction: column-reverse;
-            padding: 20px;
-        }
-        
-        .hero-content {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .hero-visual {
-            margin-bottom: 20px;
-            width: 100%;
-        }
-        
-        .hero-stats {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .stat-item {
-            flex: 1 1 100px;
-        }
-        
-        /* Tablet and desktop styles */
-        @media (min-width: 768px) {
-            .hero-container {
-                flex-direction: row;
-                align-items: center;
-                padding: 40px 20px;
-            }
-            
-            .hero-content {
-                flex-direction: row;
-            }
-            
-            .hero-text {
-                flex: 1;
-                padding-right: 30px;
-            }
-            
-            .hero-visual {
-                flex: 1;
-                margin-bottom: 0;
-            }
-            
-            .hero-video-container {
-                max-width: 600px;
-            }
-        }
-    </style>
     
     <!-- Structured Data / JSON-LD -->
     <script type="application/ld+json">
@@ -198,8 +141,8 @@
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <div class="hero-video-container" style="width: 100%; max-width: 100%; overflow: hidden;">
-                        <video id="hero-video" class="hero-video active" autoplay loop muted playsinline style="width: 100%; height: auto; min-height: 300px; object-fit: cover; border-radius: 8px;">
+                    <div class="hero-video-container">
+                        <video id="hero-video" class="hero-video active" autoplay loop muted playsinline>
                             <source src="./assets/data-prime-final.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
