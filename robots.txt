@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Disallow: /assets/private/
+
+# Allow all search engines full access
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Slurp
+Allow: /
+User-agent: DuckDuckBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.dataprime.com/sitemap.xml
